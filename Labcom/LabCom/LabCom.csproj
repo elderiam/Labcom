@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AA90184-9672-4326-B95E-32F8D533C2CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LabCom</RootNamespace>
+    <AssemblyName>LabCom</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador.Designer.cs">
+      <DependentUpon>Administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BdConnect.cs" />
+    <Compile Include="Bmaquina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bmaquina.Designer.cs">
+      <DependentUpon>Bmaquina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bmobiliario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bmobiliario.Designer.cs">
+      <DependentUpon>Bmobiliario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusqIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusqIP.Designer.cs">
+      <DependentUpon>BusqIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CMobiliario.cs" />
+    <Compile Include="Equipo.cs" />
+    <Compile Include="EquipoMetodos.cs" />
+    <Compile Include="Bsalones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bsalones.Designer.cs">
+      <DependentUpon>Bsalones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bpisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bpisos.Designer.cs">
+      <DependentUpon>Bpisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MobiliarioMetodos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegMaquina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegMaquina.Designer.cs">
+      <DependentUpon>RegMaquina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mobiliario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mobiliario.Designer.cs">
+      <DependentUpon>Mobiliario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rimp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rimp.Designer.cs">
+      <DependentUpon>Rimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rmaquina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rmaquina.Designer.cs">
+      <DependentUpon>Rmaquina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usurario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usurario.Designer.cs">
+      <DependentUpon>Usurario.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrador.resx">
+      <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bmaquina.resx">
+      <DependentUpon>Bmaquina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bmobiliario.resx">
+      <DependentUpon>Bmobiliario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusqIP.resx">
+      <DependentUpon>BusqIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bsalones.resx">
+      <DependentUpon>Bsalones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bpisos.resx">
+      <DependentUpon>Bpisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegMaquina.resx">
+      <DependentUpon>RegMaquina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mobiliario.resx">
+      <DependentUpon>Mobiliario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rimp.resx">
+      <DependentUpon>Rimp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rmaquina.resx">
+      <DependentUpon>Rmaquina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usurario.resx">
+      <DependentUpon>Usurario.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regmaquina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
